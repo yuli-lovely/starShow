@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <meta charset="UTF-8">
+          <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="format-detection" content="telephone=no, email=no">
+        <title>确认订单</title>
+        <link rel="stylesheet" type="text/css" href="../public/css/body.css">
+    </head>
+    <body class="addcolor">
+        <div class="st_orderC_warp">
+           <div class="st_orderC_where">
+                <p>请在<span id="now">29:30</span>分内完成支付，过期请重新购买。</p>
+                <div class="st_where_img">
+                    <img src="../public/images/body3.png">
+                    <div>
+                        <h2>时尚纹身艺术展</h2>
+                        <p>北京市海淀区五棵松体育馆北京市海淀 区五棵松体育馆</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                
+            </div>
+            <div class="st_orderC_detail">
+                <ul>
+                    <li>
+                        <label>单价：</label>
+                        <span class="money">¥180</span>
+                    </li>
+                    <li>
+                        <label>数量：</label>
+                        <span class="sum">x2</span>
+                    </li>
+                   <li>
+                        <label>购买票种:</label>
+                        <span class="piaoClass">通票</span>
+                    </li>
+                    <li>
+                        <label class="time">活动时间：</label>
+                        <div class="time_list">
+                            <p>2016-03-02 星期一</p>
+                            <p>2016-03-02 星期一</p>
+                            <p>2016-03-02 星期一</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="st_orderC_pay">
+                <p>￥2990</p>
+                <ul>
+                    <li >
+                        <label class="zhifubao">支付宝支付</label>
+                        <span></span>
+                    </li>
+                    <li>
+                        <label class="weixin">微信支付</label>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+            <input type="button" id="btn" value="免费获取验证码" />
+
+            <div class="st_orderC_gopay">
+                <p>去支付</p>
+            </div>
+           
+        </div>
+    
+        <script type="text/javascript" src="../public/js/zepto.js"></script>
+        <script type="text/javascript" src="../public/js/bodyart.js"></script>
+        <script src="../public/js/jweixin-1.0.0.js"></script>
+         <script src="../public/js/common.js"></script>
+        <script type="text/javascript">
+        function formatSeconds(value) {
+            var theTime = parseInt(value);// 秒
+            var theTime1 = 0;// 分
+            var theTime2 = 0;// 小时
+            if(theTime > 60) {
+                theTime1 = parseInt(theTime/60);
+                theTime = parseInt(theTime%60);
+                    if(theTime1 > 60) {
+                    theTime2 = parseInt(theTime1/60);
+                    theTime1 = parseInt(theTime1%60);
+                    }
+            }
+            //console.log(theTime);
+            if(theTime<10){
+                var result = "0"+parseInt(theTime)+"";
+            }else{
+                var result = ""+parseInt(theTime)+"";
+            }
+            //console.log(result);
+                //var result = ""+parseInt(theTime)+"";
+                if(theTime1 > 0) {
+                result = ""+parseInt(theTime1)+":"+result;
+                }
+                if(theTime2 > 0) {
+                result = ""+parseInt(theTime2)+"小时"+result;
+                }
+            return result;
+        }
+        window.onload=function(){
+            var wait=60*30;
+            function time(o) {
+              if (wait == 0) {
+               o.removeAttribute("disabled");   
+               o.value="免费获取验证码";
+               wait =60*30;
+              } else {
+               o.setAttribute("disabled", true);
+               o.value="重新发送(" + formatSeconds(wait) + ")";
+               wait--;
+               setTimeout(function() {
+                time(o)
+               },
+               1000)
+              }
+             }
+            document.getElementById("btn").onclick=function(){time(this);}
+
+            //var time=$('.st_orderC_where span').text();
+            // var t_urlpath="http://testapi.xingxiu.tv/";
+            // var o_urlpath="http://api.xingxiu.tv/";
+            // var did = location.search.replace(/\?id=(\d+).*/,'$1');
+            // var did="559";
+            // var vUrl=t_urlpath+'index.php?app=mobile&mod=Message&act=focusDetail&id='+did+'&returntype=jsonp&callback=?'
+            // var cUrl=t_urlpath+'index.php?app=mobile&mod=Message&act=focusCommentList&id='+did+'&returntype=jsonp&callback=?';
+            // getHotList(vUrl);
+            // //console.log(cUrl);
+            // getComment(cUrl);
+        }
+        </script>
+    </body>
+</html>

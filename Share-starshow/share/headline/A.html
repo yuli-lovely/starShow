@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>a.html</title>
+	 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	  <meta name="apple-mobile-web-app-capable" content="yes">
+	  <meta name="format-detection" content="telephone=no, email=no">
+</head>
+<body>
+	<iframe id="ifr" src="http://mp.weixin.qq.com/s?__biz=MzIxNTAyNjQwMw==&mid=430771551&idx=1&sn=1f35f346acd472c833090dca4cbb0c60#rd" frameborder="0" width="100%" height="100"></iframe>
+	<script type="text/javascript">
+
+	
+	window.onload=function(){
+		var ifram=document.getElementById('ifr');
+		console.log(ifram);
+		var h=document.documentElement?document.documentElement.clientHeight:document.body.clientHeight;
+		console.log(h);
+		ifram.setAttribute('height',h);
+
+	}
+
+	</script>
+</body>
+</html>
