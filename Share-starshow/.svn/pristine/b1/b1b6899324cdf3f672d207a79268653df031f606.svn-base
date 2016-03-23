@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://wx.ipropre.com/module/bpbxd?from=message&isappinstalled=0 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://wx.ipropre.com/">--><base href=".">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="中国国际纹身艺术节">
+<title>时尚星秀-中国国际纹身艺术节</title>
+
+<link rel="stylesheet" href="../public/css/idangerous.swiper.css">
+<link rel="stylesheet" href="../public/css/tattoo.css">
+<link rel="stylesheet" type="text/css" href="../public/css/wigt/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../public/css/wigt/default.css">
+<link rel="stylesheet" href="../public/css/wigt/styles.css" />
+<link rel="stylesheet" href="../public/css/wigt/touchTouch.css" />
+<style>
+    @import url(http://fonts.useso.com/css?family=Raleway:200,500,700,800);
+    @-webkit-keyframes animation{from{opacity:0; -webkit-transform:scale(1.2) rotateX(45deg);transform:scale(1.2) rotateX(45deg);} to{ }}
+
+    @-webkit-keyframes animation2{from{opacity:0; -webkit-transform:scale(1.2) rotateX(45deg);transform:scale(1.2) rotateX(45deg);} to{ }}
+    body {
+       background:#1c1c1c;
+       /*-webkit-perspective:1000px;*/
+       /*overflow:hidden;*/
+    }
+    .slider div p{color:#1c1c1c;position:absolute;bottom:-55px; font-family:Raleway; font-size:16px;}
+    .slider{
+        -webkit-animation:animation ease 1s;animation-delay:.8s;animation-fill-mode:backwards;
+        margin: 0 auto;
+        height:360px;
+        width:240px;
+        padding:40px;
+        top:100px;
+        perspective:1000px;
+        transition:ease-in-out .2s;
+        /*-webkit-transform:rotateX(45deg);
+        -webkit-transform-style:preserve-3d;
+        position:absolute;*/
+    }
+    /*.slider:active{ -webkit-transform:rotateZ(10deg);}*/
+    .slide img { text-align:center;width:100%; height:100%; -webkit-user-drag:none;user-drag:none;-moz-user-drag:none; border-radius:2px; }
+    .slide a{
+        display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    }
+    .slide{
+        -webkit-user-select:none;
+        user-select:none;
+        -moz-user-select:none;
+        position:absolute;
+        height:auto;
+        width:80%;
+        box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
+        background:#fcfcfc;
+        -webkit-transform-style:preserve-3d;
+        transform-style:preserve-3d;
+        -moz-transform-style:preserve-3d;
+        text-align:center;
+        /*overflow:hidden;*/
+       /* border:12px white solid;*/
+        box-sizing:border-box;
+        /*border-bottom:55px white solid;*/
+        border-radius:5px; 
+    }
+    .transition {
+        -webkit-transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+        -moz-transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+        transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+    }
+    .htmleaf-content{
+        margin-top: 55%;
+    }
+    .htmleaf-content1.htmleaf-content{
+        margin-top: 0;
+    }
+    #thumbs{
+        width: 100%;
+    }
+    #thumbs1{
+        width: 100%;
+    }
+    .slider1{
+         -webkit-animation:animation ease 1s;animation-delay:.8s;animation-fill-mode:backwards;
+        margin: 0 auto;
+        height:360px;
+        width:240px;
+        padding:40px;
+        top:100px;
+        perspective:1000px;
+        transition:ease-in-out .2s;
+    }
+    .span{
+        /*float: left;*/
+        width: 100px;
+        background-color: rgba(0,0,0, 0.02);
+        height: 100px;
+        vertical-align: middle;
+        border-radius: 1px;
+       /* margin-right: 100px;*/
+        position: absolute;
+        left: 50%;
+        margin-left: -50px;
+        top: 50%;
+        margin-top: -50px;
+    }
+    .square{
+        width: 20px;
+        height: 20px;
+        border: 1px rgba(255,255,255,1) solid;
+        margin: 36px auto;
+        position: relative;
+        -webkit-animation: fill_color 5s linear infinite;
+        -moz-animation: fill_color 5s linear infinite;
+        animation: fill_color 5s linear infinite;
+    }
+    .square:after {
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    content: "";
+    background-color: rgba(255,255,255,1);
+    top: -8px;
+    left: 0px;
+    -webkit-animation: square_check 1s ease-in-out infinite;
+    -moz-animation: square_check 1s ease-in-out infinite;
+    animation: square_check 1s ease-in-out infinite;
+}
+.loadover{
+    display: none;
+}
+@-webkit-keyframes fill_color{
+    0%{ box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,0.1);}
+    100%{ box-shadow: inset 0px -20px 0px 0px rgba(255,255,255,1);}
+}
+@-moz-keyframes fill_color{
+    0%{ box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,0.1);}
+    100%{ box-shadow: inset 0px -20px 0px 0px rgba(255,255,255,1);}
+}
+@keyframes fill_color{
+    0%{ box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,0.1);}
+    100%{ box-shadow: inset 0px -20px 0px 0px rgba(255,255,255,1);}
+}
+@-webkit-keyframes square_check{
+    25%{ left: 22px; top: -8px;}
+    50%{ left: 22px; top: 22px;}
+    75%{ left: -9px; top: 22px;}
+    100%{ left: -9px; top: -7px;}
+}
+@-moz-keyframes square_check{
+    25%{ left: 22px; top: -8px;}
+    50%{ left: 22px; top: 22px;}
+    75%{ left: -9px; top: 22px;}
+    100%{ left: -9px; top: -7px;}
+}
+@keyframes square_check{
+    25%{ left: 22px; top: -8px;}
+    50%{ left: 22px; top: 22px;}
+    75%{ left: -9px; top: 22px;}
+    100%{ left: -9px; top: -7px;}
+}
+/*.swiper-container{
+    display: none;
+}
+.up-arrow{
+    display: none;
+}*/
+    </style>
+<script type="text/javascript">
+    // document.write('<div id="load-layer"><div id="loading"></div></div>');
+    // window.onload=function(){
+    //     var load = document.getElementById("load-layer");
+    //     load.parentNode.removeChild(load);
+    // }
+</script>
+</head>
+<body style="">
+    
+   <!--  <div class="audio-controls on">
+        <audio id="audio" src="./js/music.mp3" loop autoplay="autoplay" type='audio/mp3'></audio>
+    </div> -->
+    <div class="loading">
+        <div class="span">
+            <div class="square"></div>
+        </div>
+    </div>
+   <!--  <div class="loadover"> -->
+       <div class="up-arrow"></div>
+    
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+        
+    <div class="swiper-slide swiper-slide-active" style="background:url('../public/images/bg1.png') no-repeat center center;background-size:100% 100%;background-color: #000">
+        <div class="down">
+            <a href="http://t.cn/R7COgYb">马上下载抢票</a>
+        </div>
+    </div> 
+                                
+     
+    <div class="swiper-slide" style="background: url('../public/images/bg2.png') no-repeat center center;background-size:100% 100%;" >
+        <div class="htmleaf-container">
+        
+        <div class="htmleaf-content">
+            <div class="slider" id="thumbs">
+               <div class="slide" >
+                    <img src="../public/images/activity/p1/15.jpg" />
+                   <a href="../public/images/activity/p1/15big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/14.jpg" />
+                   <a href="../public/images/activity/p1/14big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/13.jpg" />
+                   <a href="../public/images/activity/p1/13big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/12.jpg" />
+                   <a href="../public/images/activity/p1/12big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/11.jpg" />
+                   <a href="../public/images/activity/p1/11big.jpg"></a>
+                </div>
+                 <div class="slide" >
+                    <img src="../public/images/activity/p1/10.jpg" />
+                   <a href="../public/images/activity/p1/10big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/9.jpg" />
+                   <a href="../public/images/activity/p1/9big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/8.jpg" />
+                   <a href="../public/images/activity/p1/8big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/7.jpg" />
+                   <a href="../public/images/activity/p1/7big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/6.jpg" />
+                   <a href="../public/images/activity/p1/6big.jpg"></a>
+                </div>
+               <div class="slide" >
+                    <img src="../public/images/activity/p1/5.jpg" />
+                   <a href="../public/images/activity/p1/5big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/4.jpg" />
+                   <a href="../public/images/activity/p1/4big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/3.jpg" />
+                   <a href="../public/images/activity/p1/3big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/2.jpg" />
+                   <a href="../public/images/activity/p1/2big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p1/1.jpg" />
+                   <a href="../public/images/activity/p1/1big.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center;clear:both">
+    </div>
+    </div>
+    </div> 
+    <div class="swiper-slide swiper-slide-active " style="background-color: #000">
+        <div class="HotSpot">
+            <h2>火爆现场</h2>
+            <h3>Hot Spot</h3>
+        </div>
+          <div class="htmleaf-container">
+        
+        <div class="htmleaf-content htmleaf-content1">
+            <div class="slider1" id="thumbs1">
+               <div class="slide" >
+                    <img src="../public/images/activity/p2/15.jpg" />
+                   <a href="../public/images/activity/p2/15big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/14.jpg" />
+                   <a href="../public/images/activity/p2/14big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/13.jpg" />
+                   <a href="../public/images/activity/p2/13big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/12.jpg" />
+                   <a href="../public/images/activity/p2/12big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/11.jpg" />
+                   <a href="../public/images/activity/p2/11big.jpg"></a>
+                </div>
+                
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/9.jpg" />
+                   <a href="../public/images/activity/p2/9big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/8.jpg" />
+                   <a href="../public/images/activity/p2/8big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/16.jpg" />
+                   <a href="../public/images/activity/p2/16big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/6.jpg" />
+                   <a href="../public/images/activity/p2/6big.jpg"></a>
+                </div>
+               <div class="slide" >
+                    <img src="../public/images/activity/p2/5.jpg" />
+                   <a href="../public/images/activity/p2/5big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/4.jpg" />
+                   <a href="../public/images/activity/p2/4big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/3.jpg" />
+                   <a href="../public/images/activity/p2/3big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/2.jpg" />
+                   <a href="../public/images/activity/p2/2big.jpg"></a>
+                </div>
+                <div class="slide" >
+                    <img src="../public/images/activity/p2/1.jpg" />
+                   <a href="../public/images/activity/p2/1big.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center;clear:both">
+    </div>
+    </div>
+
+        <div class="point">
+            <img src="../public/images/bottombg.png">
+        </div>
+     
+    </div> 
+    
+    </div>
+    
+  </div> 
+  <!--   </div> -->
+
+    
+
+<script src='../public/js/wigt/stopExecutionOnTimeout.js?t=1'></script>
+
+
+<script type="text/javascript" src="../public/js/jquery1.9.1.js"></script>
+<script src="../public/js/wigt/touchTouch.js"></script>
+<script src="../public/js/wigt/touchTouch.jquery.js"></script>
+<!--<script src="./public/js/jweixin-1.0.0.js"></script>-->
+<script src="../public/js/wigt/idangerous.swiper.min.js"></script>
+<script type="text/javascript">
+// function load(){
+//     $('.loading').hide();
+//     $('.swiper-container').show();
+//     $('.up-arrow').show();
+// }
+// setTimeout(load,5000);
+document.onreadystatechange = completeLoading;
+ 
+//加载状态为complete时移除loading效果
+function completeLoading() {
+    if (document.readyState == "complete") {
+        $('.loading').hide();
+    }
+}
+$(function(){
+    var mySwiper = new Swiper('.swiper-container',{
+            loop:0,
+            mode:'vertical',
+            //tdFlow: {rotate :60,depth: 150}
+    }); 
+    //window.addEventListener('load', onWndLoad, false);
+    setTimeout(onWndLoad,500);
+    $('#thumbs a').touchTouch();
+    function onWndLoad() {
+        var slider = document.querySelector('.slider');
+        var sliders = slider.children;
+        var initX = null;
+        var transX = 2;
+        var rotZ = 3;
+        var transY = 4;
+        var curSlide = null;
+        var Z_DIS = 50;
+        var Y_DIS = 10;
+        var TRANS_DUR = 0.4;
+        var images = slider.querySelectorAll('img');
+        for (var i = 0; i < images.length; i++) {
+            if (window.CP.shouldStopExecution(1)) {
+                break;
+            }
+            images[i].onmousemove = function (e) {
+                e.preventDefault();
+            };
+            images[i].ondragstart = function (e) {
+                return false;
+            };
+        }
+        window.CP.exitedLoop(1);
+
+        function init() {
+            var z = 0, y = 0;
+            for (var i = sliders.length - 1; i >= 0; i--) {
+                if (window.CP.shouldStopExecution(2)) {
+                    break;
+                }
+                sliders[i].style.transform = 'translateZ(' + z + 'px) translateY(' + y + 'px)';
+                z -= Z_DIS;
+                y += Y_DIS;
+            }
+            window.CP.exitedLoop(2);
+            attachEvents(sliders[sliders.length - 1]);
+        }
+
+        function attachEvents(elem) {
+            curSlide = elem;
+            curSlide.addEventListener('mousedown', slideMouseDown, false);
+            curSlide.addEventListener('touchstart', slideMouseDown, false);
+        }
+
+        init();
+
+        function slideMouseDown(e) {
+            if (e.touches) {
+                initX = e.touches[0].clientX;
+            } else {
+                initX = e.pageX;
+            }
+            document.addEventListener('mousemove', slideMouseMove, false);
+            document.addEventListener('touchmove', slideMouseMove, false);
+            document.addEventListener('mouseup', slideMouseUp, false);
+            document.addEventListener('touchend', slideMouseUp, false);
+        }
+
+        var prevSlide = null;
+        function slideMouseMove(e) {
+            var mouseX;
+            if (e.touches) {
+                mouseX = e.touches[0].clientX;
+            } else {
+                mouseX = e.pageX;
+            }
+            transX += mouseX - initX;
+            rotZ = transX / 20;
+            transY = -Math.abs(transX / 15);
+            curSlide.style.transition = 'none';
+            curSlide.style.webkitTransform = 'translateX(' + transX + 'px)' + ' rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+            curSlide.style.transform = 'translateX(' + transX + 'px)' + ' rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+            var j = 1;
+            for (var i = sliders.length - 2; i >= 0; i--) {
+                if (window.CP.shouldStopExecution(3)) {
+                    break;
+                }
+                sliders[i].style.webkitTransform = 'translateX(' + transX / (2 * j) + 'px)' + ' rotateZ(' + rotZ / (2 * j) + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                sliders[i].style.transform = 'translateX(' + transX / (2 * j) + 'px)' + ' rotateZ(' + rotZ / (2 * j) + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                sliders[i].style.transition = 'none';
+                j++;
+            }
+            window.CP.exitedLoop(3);
+            initX = mouseX;
+            e.preventDefault();
+            if (Math.abs(transX) >= curSlide.offsetWidth - 150) {
+                document.removeEventListener('mousemove', slideMouseMove, false);
+                document.removeEventListener('touchmove', slideMouseMove, false);
+                curSlide.style.transition = 'ease 0.2s';
+                curSlide.style.opacity = 0;
+                prevSlide = curSlide;
+                attachEvents(sliders[sliders.length - 2]);
+                slideMouseUp();
+                setTimeout(function () {
+                    slider.insertBefore(prevSlide, slider.firstChild);
+                    prevSlide.style.transition = 'none';
+                    prevSlide.style.opacity = '1';
+                    slideMouseUp();
+                }, 201);
+                return;
+            }
+        }
+
+
+        function slideMouseUp() {
+            transX = 0;
+            rotZ = 0;
+            transY = 0;
+            curSlide.style.transition = 'cubic-bezier(0,1.95,.49,.73) ' + TRANS_DUR + 's';
+            curSlide.style.webkitTransform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+            curSlide.style.transform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+            var j = 1;
+            for (var i = sliders.length - 2; i >= 0; i--) {
+                sliders[i].style.transition = 'cubic-bezier(0,1.95,.49,.73) ' + TRANS_DUR / (j + 0.9) + 's';
+                sliders[i].style.webkitTransform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                sliders[i].style.transform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                j++;
+            }
+            document.removeEventListener('mousemove', slideMouseMove, false);
+            document.removeEventListener('touchmove', slideMouseMove, false);
+        }
+
+
+    }
+})  
+// $(document).ready(function(e) {
+//     var mySwiper = new Swiper('.swiper-container',{
+//             loop:1,
+//             mode:'vertical',
+//             //tdFlow: {rotate :60,depth: 150}
+//     });
+// // $.getJSON('http://api.xingxiu.tv/index.php?app=mobile&mod=WeChat&act=sign&url='+encodeURIComponent(location.href)+'&returntype=jsonp&callback=?',function(d){
+// //     if(d.info.status){
+// //         wx.config({
+// //         debug: false,
+// //         appId: "wxff356e127c0ecb9e",
+// //         timestamp: d.info.timestamp,
+// //         nonceStr: "xingxiu2015",
+// //         signature: d.info.signature,
+// //         jsApiList: [    
+// //             'checkJsApi',
+// //             'onMenuShareTimeline',
+// //             'onMenuShareAppMessage',
+// //             'onMenuShareQQ',
+// //             'onMenuShareWeibo',
+// //             'hideMenuItems',
+// //             'showMenuItems',
+// //             'hideAllNonBaseMenuItem',
+// //             'showAllNonBaseMenuItem',
+// //             'translateVoice',
+// //             'startRecord',
+// //             'stopRecord',
+// //             'onRecordEnd',
+// //             'playVoice',
+// //             'pauseVoice',
+// //             'stopVoice',
+// //             'uploadVoice',
+// //             'downloadVoice',
+// //             'chooseImage',
+// //             'previewImage',
+// //             'uploadImage',
+// //             'downloadImage',
+// //             'getNetworkType',
+// //             'openLocation',
+// //             'getLocation',
+// //             'hideOptionMenu',
+// //             'showOptionMenu',
+// //             'closeWindow',
+// //             'scanQRCode',
+// //             'chooseWXPay',
+// //             'openProductSpecificView',
+// //             'addCard',
+// //             'chooseCard',
+// //             'openCard'
+// //         ]
+// //         });
+
+// //        wx.ready(function(){                        
+// //         // 在这里调用 API
+// //           wx.onMenuShareAppMessage({
+// //             title: "来自苏芒的时尚星秀年度星秀人物盛典邀请",
+// //             desc: "时尚星秀年度星秀人物邀请函",
+// //             link: "http://star.xingxiu.tv/oauth2/come",
+// //              imgUrl: "http://share.xingxiu.tv/yqh/ship/images/icon.jpg",
+// //             trigger: function (res) {
+// //             },
+// //             success: function (res) {
+// //             // alert('已分享');
+// //             },
+// //             cancel: function (res) {
+// //             // alert('已取消');
+// //             },
+// //             fail: function (res) {
+// //             // alert(JSON.stringify(res));
+// //             }
+// //           });
+// //           wx.onMenuShareTimeline({
+// //             title: "来自苏芒的时尚星秀年度星秀人物盛典邀请",
+// //            link: "http://star.xingxiu.tv/oauth2/come",
+// //              imgUrl: "http://share.xingxiu.tv/yqh/ship/images/icon.jpg",
+// //             trigger: function (res) {
+// //             },
+// //             success: function (res) {
+// //             // alert('已分享');
+// //             },
+// //             cancel: function (res) {
+// //             // alert('已取消');
+// //             },
+// //             fail: function (res) {
+// //             // alert(JSON.stringify(res));
+// //             }
+// //           });
+// //         });
+// //     } else {
+// //       // alert(d.status);
+// //     }
+// //   })
+// });
+  
+      
+ $(function(){
+    //window.addEventListener('load', onWndLoad1, false);
+    setTimeout(onWndLoad1,1000);
+    $('#thumbs1 a').touchTouchjs();
+    function onWndLoad1() {
+        var slider = document.querySelector('.slider1');
+        var sliders = slider.children;
+        var initX = null;
+        var transX = 2;
+        var rotZ = 3;
+        var transY = 4;
+        var curSlide = null;
+        var Z_DIS = 50;
+        var Y_DIS = 10;
+        var TRANS_DUR = 0.4;
+        var images = slider.querySelectorAll('img');
+        for (var i = 0; i < images.length; i++) {
+            if (window.CP.shouldStopExecution(1)) {
+                break;
+            }
+            images[i].onmousemove = function (e) {
+                e.preventDefault();
+            };
+            images[i].ondragstart = function (e) {
+                return false;
+            };
+        }
+        window.CP.exitedLoop(1);
+
+        function init() {
+            var z = 0, y = 0;
+            for (var i = sliders.length - 1; i >= 0; i--) {
+                if (window.CP.shouldStopExecution(2)) {
+                    break;
+                }
+                sliders[i].style.transform = 'translateZ(' + z + 'px) translateY(' + y + 'px)';
+                z -= Z_DIS;
+                y += Y_DIS;
+            }
+            window.CP.exitedLoop(2);
+            attachEvents(sliders[sliders.length - 1]);
+        }
+
+        function attachEvents(elem) {
+            curSlide = elem;
+            curSlide.addEventListener('mousedown', slideMouseDown, false);
+            curSlide.addEventListener('touchstart', slideMouseDown, false);
+        }
+
+        init();
+
+        function slideMouseDown(e) {
+            if (e.touches) {
+                initX = e.touches[0].clientX;
+            } else {
+                initX = e.pageX;
+            }
+            document.addEventListener('mousemove', slideMouseMove, false);
+            document.addEventListener('touchmove', slideMouseMove, false);
+            document.addEventListener('mouseup', slideMouseUp, false);
+            document.addEventListener('touchend', slideMouseUp, false);
+        }
+
+        var prevSlide = null;
+        function slideMouseMove(e) {
+            var mouseX;
+            if (e.touches) {
+                mouseX = e.touches[0].clientX;
+            } else {
+                mouseX = e.pageX;
+            }
+            transX += mouseX - initX;
+            rotZ = transX / 20;
+            transY = -Math.abs(transX / 15);
+            curSlide.style.transition = 'none';
+            curSlide.style.webkitTransform = 'translateX(' + transX + 'px)' + ' rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+            curSlide.style.transform = 'translateX(' + transX + 'px)' + ' rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+            var j = 1;
+            for (var i = sliders.length - 2; i >= 0; i--) {
+                if (window.CP.shouldStopExecution(3)) {
+                    break;
+                }
+                sliders[i].style.webkitTransform = 'translateX(' + transX / (2 * j) + 'px)' + ' rotateZ(' + rotZ / (2 * j) + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                sliders[i].style.transform = 'translateX(' + transX / (2 * j) + 'px)' + ' rotateZ(' + rotZ / (2 * j) + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                sliders[i].style.transition = 'none';
+                j++;
+            }
+            window.CP.exitedLoop(3);
+            initX = mouseX;
+            e.preventDefault();
+            if (Math.abs(transX) >= curSlide.offsetWidth - 150) {
+                document.removeEventListener('mousemove', slideMouseMove, false);
+                document.removeEventListener('touchmove', slideMouseMove, false);
+                curSlide.style.transition = 'ease 0.2s';
+                curSlide.style.opacity = 0;
+                prevSlide = curSlide;
+                attachEvents(sliders[sliders.length - 2]);
+                slideMouseUp();
+                setTimeout(function () {
+                    slider.insertBefore(prevSlide, slider.firstChild);
+                    prevSlide.style.transition = 'none';
+                    prevSlide.style.opacity = '1';
+                    slideMouseUp();
+                }, 201);
+                return;
+            }
+        }
+
+
+        function slideMouseUp() {
+            transX = 0;
+            rotZ = 0;
+            transY = 0;
+            curSlide.style.transition = 'cubic-bezier(0,1.95,.49,.73) ' + TRANS_DUR + 's';
+            curSlide.style.webkitTransform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+            curSlide.style.transform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + transY + 'px)';
+            var j = 1;
+            for (var i = sliders.length - 2; i >= 0; i--) {
+                sliders[i].style.transition = 'cubic-bezier(0,1.95,.49,.73) ' + TRANS_DUR / (j + 0.9) + 's';
+                sliders[i].style.webkitTransform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                sliders[i].style.transform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + Y_DIS * j + 'px)' + ' translateZ(' + -Z_DIS * j + 'px)';
+                j++;
+            }
+            document.removeEventListener('mousemove', slideMouseMove, false);
+            document.removeEventListener('touchmove', slideMouseMove, false);
+        }
+
+
+    }
+    // $('#thumbs a').touchTouch();
+    
+    });
+ // $(function(){
+ //    // $('#thumbs1 a').touchTouch();
+ //    $('#thumbs a').touchTouch();
+    
+ //    });
+</script>
+</body>
+</html>
