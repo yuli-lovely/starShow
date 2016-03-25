@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <meta charset="UTF-8">
+          <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="format-detection" content="telephone=no, email=no">
+        <title>今日头条</title>
+        <link rel="stylesheet" type="text/css" href="../public/css/common.css">
+    </head>
+    <body>
+        <div class="st_warp">
+            <div class="st_live_top">
+                <div class="st_con_t_img">
+                   <img src="">
+                </div>
+                <div class="st_con_t_h2">
+                    <h2></h2>
+                    <h6 class="st_con_t_h6"></h6>
+                </div>
+                <div class="st_like">
+                    <ul>
+                        <li>
+                            <p class="st_like_l" isdigg="" onclick="getLike('st_like_l','hot_like')">
+                            </p>
+                            <p class="hot_like">0</p>
+                        </li>
+                        <li>
+                            <p class="st_like_2"></p>
+                            <p class="hot_look">0</p>
+                        </li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="st_hot_list">
+              
+            </div>
+            <div class="st_hot_t">
+                <h2>今日热门<span></span></h2>
+                <ul class="hd_list">
+                   
+                </ul>
+            </div>
+            <div class="st_hot_c">
+                <h2>评论<span></span></h2>
+                <ul class="st_hot_c_warp">
+                  <!--   <li>
+                        <ul class="st_hot_c_warp">
+                            <li class="st_hot_c_warp_l"><img src="" alt=""></li>
+                            <li class="st_hot_c_warp_r">
+                                <p>Divo</p>
+                                <p>DivoDivoDivo</p>
+                                <p>DivoDivoDivoDivo</p>
+                                <div>
+                                    <p>Divo</p>
+                                    <p>DivoDivoDivoDivo</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li> -->
+                   <div class="clear"></div>
+                </ul>
+            </div>
+
+            <div class="bottom">
+             <div class="left"></div>
+                <a href="http://t.cn/R7COgYb" class="right"></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="../public/js/zepto.js"></script>
+        <script type="text/javascript" src="../public/js/app.js"></script>
+        <script src="../public/js/jweixin-1.0.0.js"></script>
+        <script src="../public/js/common.js"></script>
+        <script type="text/javascript">
+        window.onload=function(){
+            var t_urlpath="http://testapi.xingxiu.tv/";
+            var o_urlpath="http://api.xingxiu.tv/";
+           // var did = location.search.replace(/\?id=(\d+).*/,'$1');
+            var did = location.search.slice(location.search.indexOf("&id")+4).split("&")[0];
+            // var did="559";
+            var vUrl=o_urlpath+'index.php?app=mobile&mod=Message&act=focusDetail&id='+did+'&returntype=jsonp&callback=?'
+            var cUrl=o_urlpath+'index.php?app=mobile&mod=Message&act=focusCommentList&id='+did+'&returntype=jsonp&callback=?';
+            getHotList(vUrl);
+            //console.log(cUrl);
+            getComment(cUrl);
+        }
+        </script>
+    </body>
+</html>

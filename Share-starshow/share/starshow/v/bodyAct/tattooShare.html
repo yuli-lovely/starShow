@@ -162,26 +162,12 @@
     75%{ left: -9px; top: 22px;}
     100%{ left: -9px; top: -7px;}
 }
-/*.swiper-container{
-    display: none;
-}
-.up-arrow{
-    display: none;
-}*/
+
     </style>
-<script type="text/javascript">
-    // document.write('<div id="load-layer"><div id="loading"></div></div>');
-    // window.onload=function(){
-    //     var load = document.getElementById("load-layer");
-    //     load.parentNode.removeChild(load);
-    // }
-</script>
+
 </head>
 <body style="">
-    
-   <!--  <div class="audio-controls on">
-        <audio id="audio" src="./js/music.mp3" loop autoplay="autoplay" type='audio/mp3'></audio>
-    </div> -->
+ 
     <div class="loading">
         <div class="span">
             <div class="square"></div>
@@ -362,15 +348,11 @@
 <script type="text/javascript" src="../public/js/jquery1.9.1.js"></script>
 <script src="../public/js/wigt/touchTouch.js"></script>
 <script src="../public/js/wigt/touchTouch.jquery.js"></script>
-<!--<script src="./public/js/jweixin-1.0.0.js"></script>-->
+<script src="../public/js/jweixin-1.0.0.js"></script>
+<script src="../public/js/common.js"></script>  
 <script src="../public/js/wigt/idangerous.swiper.min.js"></script>
 <script type="text/javascript">
-// function load(){
-//     $('.loading').hide();
-//     $('.swiper-container').show();
-//     $('.up-arrow').show();
-// }
-// setTimeout(load,5000);
+
 document.onreadystatechange = completeLoading;
  
 //加载状态为complete时移除loading效果
@@ -513,102 +495,7 @@ $(function(){
 
 
     }
-})  
-// $(document).ready(function(e) {
-//     var mySwiper = new Swiper('.swiper-container',{
-//             loop:1,
-//             mode:'vertical',
-//             //tdFlow: {rotate :60,depth: 150}
-//     });
-// // $.getJSON('http://api.xingxiu.tv/index.php?app=mobile&mod=WeChat&act=sign&url='+encodeURIComponent(location.href)+'&returntype=jsonp&callback=?',function(d){
-// //     if(d.info.status){
-// //         wx.config({
-// //         debug: false,
-// //         appId: "wxff356e127c0ecb9e",
-// //         timestamp: d.info.timestamp,
-// //         nonceStr: "xingxiu2015",
-// //         signature: d.info.signature,
-// //         jsApiList: [    
-// //             'checkJsApi',
-// //             'onMenuShareTimeline',
-// //             'onMenuShareAppMessage',
-// //             'onMenuShareQQ',
-// //             'onMenuShareWeibo',
-// //             'hideMenuItems',
-// //             'showMenuItems',
-// //             'hideAllNonBaseMenuItem',
-// //             'showAllNonBaseMenuItem',
-// //             'translateVoice',
-// //             'startRecord',
-// //             'stopRecord',
-// //             'onRecordEnd',
-// //             'playVoice',
-// //             'pauseVoice',
-// //             'stopVoice',
-// //             'uploadVoice',
-// //             'downloadVoice',
-// //             'chooseImage',
-// //             'previewImage',
-// //             'uploadImage',
-// //             'downloadImage',
-// //             'getNetworkType',
-// //             'openLocation',
-// //             'getLocation',
-// //             'hideOptionMenu',
-// //             'showOptionMenu',
-// //             'closeWindow',
-// //             'scanQRCode',
-// //             'chooseWXPay',
-// //             'openProductSpecificView',
-// //             'addCard',
-// //             'chooseCard',
-// //             'openCard'
-// //         ]
-// //         });
-
-// //        wx.ready(function(){                        
-// //         // 在这里调用 API
-// //           wx.onMenuShareAppMessage({
-// //             title: "来自苏芒的时尚星秀年度星秀人物盛典邀请",
-// //             desc: "时尚星秀年度星秀人物邀请函",
-// //             link: "http://star.xingxiu.tv/oauth2/come",
-// //              imgUrl: "http://share.xingxiu.tv/yqh/ship/images/icon.jpg",
-// //             trigger: function (res) {
-// //             },
-// //             success: function (res) {
-// //             // alert('已分享');
-// //             },
-// //             cancel: function (res) {
-// //             // alert('已取消');
-// //             },
-// //             fail: function (res) {
-// //             // alert(JSON.stringify(res));
-// //             }
-// //           });
-// //           wx.onMenuShareTimeline({
-// //             title: "来自苏芒的时尚星秀年度星秀人物盛典邀请",
-// //            link: "http://star.xingxiu.tv/oauth2/come",
-// //              imgUrl: "http://share.xingxiu.tv/yqh/ship/images/icon.jpg",
-// //             trigger: function (res) {
-// //             },
-// //             success: function (res) {
-// //             // alert('已分享');
-// //             },
-// //             cancel: function (res) {
-// //             // alert('已取消');
-// //             },
-// //             fail: function (res) {
-// //             // alert(JSON.stringify(res));
-// //             }
-// //           });
-// //         });
-// //     } else {
-// //       // alert(d.status);
-// //     }
-// //   })
-// });
-  
-      
+})   
  $(function(){
     //window.addEventListener('load', onWndLoad1, false);
     setTimeout(onWndLoad1,1000);
@@ -738,14 +625,9 @@ $(function(){
 
 
     }
-    // $('#thumbs a').touchTouch();
     
     });
- // $(function(){
- //    // $('#thumbs1 a').touchTouch();
- //    $('#thumbs a').touchTouch();
-    
- //    });
+
 </script>
 </body>
 </html>

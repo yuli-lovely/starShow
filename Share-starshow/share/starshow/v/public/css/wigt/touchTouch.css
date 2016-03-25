@@ -38,7 +38,30 @@
 	-webkit-transition:left 0.4s ease;
 	transition:left 0.4s ease;
 }
-
+#gallerySlider:before{
+	content: "";
+	width: 35px;
+	height: 35px;
+	background-image: url('../../images/live_close.png');
+	display: inline-block;
+	background-size: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+}
+#gallerySlider1:before{
+	content: "";
+	width: 35px;
+	height: 35px;
+	background-image: url('../../images/live_close.png');
+	display: inline-block;
+	background-size: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+}
 #gallerySlider .placeholder{
 	background: url("preloader.gif") no-repeat center center;
 	height: 100%;
@@ -46,6 +69,7 @@
 	text-align: center;
 	width:100%;
 	display:inline-block;
+
 }
 
 /* The before element moves the

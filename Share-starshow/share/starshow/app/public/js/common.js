@@ -1,11 +1,18 @@
-$.getJSON('http://api.xingxiu.tv/index.php?app=mobile&mod=WeChat&act=sign&url='+encodeURIComponent(location.href)+'&returntype=jsonp&callback=?',function(d){
+var turl="http://testapi.xingxiu.tv/";
+var aurl="http://api.xingxiu.tv/";
+var type = location.search.replace(/\?type=(\d+).*/,'$1');
+var id = location.search.slice(location.search.indexOf("&id")+4).split("&")[0];
+console.log(id+'=========+'+type);
+var url=turl+'index.php?app=mobile&mod=WeChat&act=sign&url='+encodeURIComponent(location.href)+'&id='+id+'&type='+type+'&returntype=jsonp&callback=?'
+//alert(url);
+$.getJSON(url,function(d){
 if(d.info.status){
-    alert(d+'=====d');
+   console.log(JSON.stringify(d)+'=====d');
     wx.config({
     debug: false,
-    appId: "wxff356e127c0ecb9e",
+    appId: d.info.appId,
     timestamp: d.info.timestamp,
-    nonceStr: "xingxiu2015",
+    nonceStr: d.info.nonceStr,
     signature: d.info.signature,
     jsApiList: [    
         'checkJsApi',
@@ -48,10 +55,11 @@ if(d.info.status){
    wx.ready(function(){                        
     // 在这里调用 API
       wx.onMenuShareAppMessage({
-        title: d.info.title,
-        desc: d.info.desc,
-        link: d.info.link,
-        imgUrl: d.info.imgUrl,
+        title: d.share.title,
+        desc: d.share.desc,
+        // link: d.info.link,
+        imgUrl: d.share.thumb,
+       
         trigger: function (res) {
         },
         success: function (res) {
@@ -65,9 +73,10 @@ if(d.info.status){
         }
       });
       wx.onMenuShareTimeline({
-        title: "来自苏芒的时尚星秀年度星秀人物盛典邀请",
-        link: "http://star.xingxiu.tv/oauth2",
-          imgUrl: "http://share.xingxiu.tv/yqh/ship/images/icon.jpg",
+        title: d.share.title,
+        desc: d.share.desc,
+        // link: d.info.link,
+        imgUrl: d.share.thumb,
         trigger: function (res) {
         },
         success: function (res) {

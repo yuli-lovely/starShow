@@ -73,12 +73,13 @@
         <script type="text/javascript" src="../public/js/zepto.js"></script>
         <script type="text/javascript" src="../public/js/app.js"></script>
         <script src="../public/js/jweixin-1.0.0.js"></script>
-         <script src="../public/js/common.js"></script>
+        <script src="../public/js/common.js"></script>
         <script type="text/javascript">
         window.onload=function(){
             var t_urlpath="http://testapi.xingxiu.tv/";
             var o_urlpath="http://api.xingxiu.tv/";
-            var did = location.search.replace(/\?id=(\d+).*/,'$1');
+           // var did = location.search.replace(/\?id=(\d+).*/,'$1');
+            var did = location.search.slice(location.search.indexOf("&id")+4).split("&")[0];
             // var did="559";
             var vUrl=o_urlpath+'index.php?app=mobile&mod=Message&act=focusDetail&id='+did+'&returntype=jsonp&callback=?'
             var cUrl=o_urlpath+'index.php?app=mobile&mod=Message&act=focusCommentList&id='+did+'&returntype=jsonp&callback=?';
