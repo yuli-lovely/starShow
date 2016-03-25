@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <meta charset="UTF-8">
+          <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="format-detection" content="telephone=no, email=no">
+        <title>活动详情页</title>
+        <link rel="stylesheet" type="text/css" href="../public/css/body.css??v=201603251650">
+    </head>
+    <body>
+        <div class="st_ba_warp">
+            <div class="st_ba_top">
+                <img src="../public/images/bodytop.png">
+                <p>我的订单</p>
+            </div>
+            <!-- <div class="st_ba_zao">
+                <img src="../public/images/zao.png">
+            </div> -->
+            <div class="st_ba_money">
+                <h2>现场价格</h2>
+                <p class="st_ba_our">RMB:<img src="../public/images/bodycurrent.png"></p>
+                <h2 class="c_color">APP价格</h2>
+                <p class="st_ba_current">RMB: 单日80-三日180</p>
+                <p class="canyu">已有63656参与</p>
+            </div>
+            <div class="st_ba_address">
+                <p>活动时间：2016-05-28至2016-05-30 </p>
+                <p>活动地址：廊坊国际会展中心</p>
+                <p>票种：单日票和通票</p>
+            </div>
+            <div class="st_ba_jieshao">
+                <ul>
+                    <li class="line">&nbsp&nbsp</li>
+                    <li>活动简介</li>
+                    <li class="line">&nbsp&nbsp</li>
+                    <div class="clear"></div>
+                </ul>
+                <p>与其说是纹身师，不如说是画者。绘画与纹身本就是有着不可分割的冲动，一个纹身比一幅画却拥有更多的东西，他会成为你的一部分，包含着与其说是纹身师，不如说是画者。绘画与纹身本就是有着不可分割的冲动，一个纹身比一幅画却拥有更多的东西，他会成为你的一部分，包含着与其说是纹身师，不如说是画者。绘画与纹身本就是有着不可分割的冲动，一个纹身比一幅画却拥有更多的东西，他会成为你的一部分，包含着与其说是纹身师，不如说是画者。绘画与纹身本就是有着不可分割的冲动，一个纹身比一幅画却拥有更多的东西，他会成为你的一部分，包含着</p>
+            </div>
+            <div class="kefu">
+                客服电话:  <a href="tel:65895559-306">65895559-306</a>
+            </div>
+            <div class="st_ba_join">
+                <img src="../public/images/body2.png">
+            </div>
+        </div>
+    
+        <script type="text/javascript" src="../public/js/zepto.js"></script>
+        <script type="text/javascript" src="../public/js/bodyart.js?v=201603181534"></script>
+       
+    </body>
+</html>

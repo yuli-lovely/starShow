@@ -12,6 +12,9 @@
     <body class="addcolor">
         <div class="st_buyD_warp">
            <div class="st_buyD_top">
+            <div class="st_buyD_img">
+                <img src="../public/images/body4.png">
+            </div>
                 <div class="st_buyD_top_mark"></div>
                 <div class="st_buyD_top_text">
                     <h3>中国廊坊国际纹身艺术节</h3>
@@ -67,7 +70,8 @@
         <script src="../public/js/jweixin-1.0.0.js"></script>
         <script type="text/javascript">
         window.onload=function(){
-           
+           var w=document.body.clientWidth||document.documentElement.clientWidth;
+            $('.st_buyD_img').css('width',w);
         }
         </script>
     </body>

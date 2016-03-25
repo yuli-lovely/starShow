@@ -8,8 +8,8 @@ module.exports = function(grunt) {
       banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
     },
     dist: {
-      src: 'app/public/js/common.js',
-      dest: 'v/public/js/common.js'
+      src: 'app/public/js/rank.js',
+      dest: 'v/public/js/rank.js'
     }
   },
   less: {
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
       //   options: {livereload:true}
       // },
       less: {
-        files: ['app/public/css/rank.less','app/public/js/common.js'],
+        files: ['app/public/css/rank.less','app/public/js/rank.js'],
         tasks: ['less','uglify']
       }
     }

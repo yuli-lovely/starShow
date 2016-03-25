@@ -20,7 +20,16 @@
 
     <script src="../public/js/zepto.js"></script>
     <script src="../public/js/rank.js"></script>  
-     <script src="../public/js/jweixin-1.0.0.js"></script>
-     <script src="../public/js/common.js"></script>
+    <!-- <script src="../public/js/jweixin-1.0.0.js"></script>
+     <script src="../public/js/common.js"></script>-->
+     <script type="text/javascript">
+      $(function(){
+        var ida = location.search.replace(/\?id=(\d+).*/,'$1');
+        var uida = location.search.slice(location.search.indexOf("&uid=") + 5).split("&")[0];
+        console.log(ida+'++++++++'+uida);
+        var p_url="http://testapi.xingxiu.tv/index.php?app=mobile&mod=Star&act=exchange&star_id="+ida+"&uid="+uida+"&returntype=jsonp&callback=?"
+        getPrize(p_url);
+      })
+     </script>
  </body>
 </html>

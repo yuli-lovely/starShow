@@ -2,8 +2,8 @@ var turl="http://testapi.xingxiu.tv/";
 var aurl="http://api.xingxiu.tv/";
 var type = location.search.replace(/\?type=(\d+).*/,'$1');
 var id = location.search.slice(location.search.indexOf("&id")+4).split("&")[0];
-console.log(id+'=========+'+type);
-var url=turl+'index.php?app=mobile&mod=WeChat&act=sign&url='+encodeURIComponent(location.href)+'&id='+id+'&type='+type+'&returntype=jsonp&callback=?'
+console.log(id+'+========+'+type);
+var url=aurl+'index.php?app=mobile&mod=WeChat&act=sign&url='+encodeURIComponent(location.href)+'&id='+id+'&type='+type+'&returntype=jsonp&callback=?'
 //alert(url);
 $.getJSON(url,function(d){
 if(d.info.status){

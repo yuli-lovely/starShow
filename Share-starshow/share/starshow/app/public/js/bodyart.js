@@ -116,6 +116,7 @@ $('.plus').on('click',function(){
         $('.st_sum_one').text(moneySum);
     }else{
          $('.buySum').text(5);
+         alert("单个订单最多购买5张");
     }
     
 })
